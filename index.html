@@ -2,9 +2,13 @@
 <html>
     <head>
         <title>Etch a sketch</title>
-        <script src="demo.js" type="text/javascript" defer></script>
+        <script src="index.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="container"></div>
+        <div class="container" onclick="showResetButton(event)"></div>
+        <div class="reset-container hidden">
+            <button type="button" onclick="start()">Reset Grid</button>
+        </div>
     </body>
 </html>
